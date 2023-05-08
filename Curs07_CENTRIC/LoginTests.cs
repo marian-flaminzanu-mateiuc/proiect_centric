@@ -12,31 +12,30 @@ namespace Curs07_CENTRIC
     {
         private IWebDriver driver;
         private LoginPage login;
+        private RegisterPage register;
+       
         [TestInitialize]
         public void TestInitialize()
         {
             driver = new ChromeDriver();
             login = new LoginPage(driver);
+            register = new RegisterPage(driver);
+           
             //maximize browser window 
             driver.Manage().Window.Maximize();
             //open the navigatation URL
-            driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/index.htm");
-            login.menuItemControlLoggedOut.NavigateToLoginPage();
+           
         }
         [TestMethod]
         public void Should_LoginUser_When_ValidCredentialsAreUsed()//test de verificare logare cu un set de credentiale corecte
         {
 
-            //click sign in button from header
-            //driver.FindElement(By.XPath("//div[@class='panel header']//a[contains(text(), 'Sign In')]")).Click();
-            //fill in valid user email
-            //driver.FindElement(By.Id("email")).SendKeys("test@email.ro");
-            //fill in user password
-            //driver.FindElement(By.Name("login[password]")).SendKeys("Test!123");
-            //click sign in button 
-            //driver.FindElement(By.CssSelector("button[name='send']")).Click();
-            //assert
-            login.SignInTheApplication("testare", "testare");
+            driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/register.htm");
+            register.RegisterTheApplication("testare", "testare", "Address", "Mexico", "Mexico", "13234", "455321112345", "2334556", "testare19", "test", "test");
+            register.LogOut();
+            driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/index.htm");
+            login.menuItemControlLoggedOut.NavigateToLoginPage();
+            login.SignInTheApplication("testare19", "test");
 
             // sleep
             Thread.Sleep(2000);
@@ -51,15 +50,9 @@ namespace Curs07_CENTRIC
         [TestMethod]
         public void Should_NotLoginUser_When_WrongEmailUsed()   //set de valori pentru testare cu credentiale gresite
         {
-            //click sign in button from header
-            // driver.FindElement(By.XPath("//div[@class='panel header']//a[contains(text(), 'Sign In')]")).Click();
-            //fill in wrong  user email
-            //driver.FindElement(By.Id("email")).SendKeys("testulet@yahoo.com");
-            //fill in user password
-            // driver.FindElement(By.Name("login[password]")).SendKeys("Test!123");
-            //click sign in button 
-            //driver.FindElement(By.CssSelector("button[name='send']")).Click();
-            //assert
+           
+            driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/index.htm");
+            login.menuItemControlLoggedOut.NavigateToLoginPage();
             login.SignInTheApplication("hasjj@outlook.ro", "Test!123");
 
             // sleep

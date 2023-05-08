@@ -37,8 +37,10 @@ namespace Curs07_CENTRIC
         {
 
             driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/register.htm");
-            register.RegisterTheApplication("testare1", "testare1", "Address", "Mexico", "Mexico", "13234", "455321112345", "23345567", "testare6", "testare3", "testare3");
-            driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/overview.htm");
+            register.RegisterTheApplication("testare1", "testare1", "Address", "Mexico", "Mexico", "13234", "455321112345", "23345567", "testare201", "testare3", "testare3");
+            register.LogOut();
+            driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/index.htm");
+            login.SignInTheApplication("testare201", "testare3");
 
             updateInformation.menuItemControlUpdateInformation.NavigateToUpdateInformation();
 
@@ -54,7 +56,7 @@ namespace Curs07_CENTRIC
         public void Should_UpdateInformation_When_UserExists()
         {
             driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/index.htm");
-            login.SignInTheApplication("testare5", "testare2");
+            login.SignInTheApplication("testare201", "testare3");
             driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/overview.htm");
             updateInformation.menuItemControlUpdateInformation.NavigateToUpdateInformation();
 

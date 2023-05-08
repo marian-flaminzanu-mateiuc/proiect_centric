@@ -25,6 +25,8 @@ namespace Curs07_CENTRIC.PageObjects
         private IWebElement Confirm => driver.FindElement(By.Name("repeatedPassword"));
         private IWebElement RegisterButton => driver.FindElement(By.XPath("//input[@value='Register']"));
 
+        private IWebElement LogOutButton => driver.FindElement(By.XPath("//div[@id='bodyPanel']//div[@id='leftPanel']//ul//a[text()='Log Out']"));
+
         public void RegisterTheApplication(string firstName, string lastName,string address,string city,string state,string zipCode,string phone,string SSN,string username,string password,string confirm)
         {
            FirstName.SendKeys(firstName);
@@ -40,6 +42,13 @@ namespace Curs07_CENTRIC.PageObjects
             Confirm.SendKeys(confirm);
 
             RegisterButton.Click();
+            
+        }
+        public void LogOut()
+        {
+
+            LogOutButton.Click();
         }
     }
+    
 }

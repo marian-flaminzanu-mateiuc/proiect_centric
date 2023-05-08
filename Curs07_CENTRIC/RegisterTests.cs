@@ -26,7 +26,7 @@ namespace Curs07_CENTRIC
         public void Should_RegisterUser()//test de verificare logare cu un set de credentiale corecte
         {
 
-            register.RegisterTheApplication("testare", "testare", "Address", "Mexico", "Mexico", "13234", "455321112345", "2334556", "testare4", "testare2", "testare2");
+            register.RegisterTheApplication("testare", "testare", "Address", "Mexico", "Mexico", "13234", "455321112345", "2334556", "testare16", "testare2", "testare2");
 
             // sleep
             Thread.Sleep(3000);

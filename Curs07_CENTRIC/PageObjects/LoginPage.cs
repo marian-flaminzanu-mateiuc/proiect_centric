@@ -11,21 +11,6 @@ namespace Curs07_CENTRIC.PageObjects
         {
             driver = browser;
         }
-
-        /* private IWebElement EmailInput()
-         {
-             return driver.FindElement(By.Id("email"));
-         }
-
-         private IWebElement PasswordInput()
-         {
-             return driver.FindElement(By.Name("login[password]"));
-         }
-
-         private IWebElement SignInButton()
-         {
-             return driver.FindElement(By.CssSelector("button[name='send']"));
-         }*/
         private IWebElement EmailInput => driver.FindElement(By.Name("username"));
 
         private IWebElement PasswordInput => driver.FindElement(By.Name("password"));
@@ -36,6 +21,7 @@ namespace Curs07_CENTRIC.PageObjects
             EmailInput.SendKeys(email);
             PasswordInput.SendKeys(password);
             SignInButton.Click();
+            
         }
     }
 }
