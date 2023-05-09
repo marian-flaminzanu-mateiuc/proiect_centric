@@ -32,7 +32,7 @@ namespace Curs07_CENTRIC
         [TestMethod]
         public void Should_Initialize_Database()
         {
-            admin.InitializeDatabase("456", "http://localhost:9080/proxy/parabank/services/bank", "456p", "30000", "30.00","Local","combined", "50");
+            admin.InitializeDatabase(0,"456", "http://localhost:9080/proxy/parabank/services/bank", "456p", "30000", "30.00","Local","combined", "50");
 
             // sleep
             Thread.Sleep(3000);

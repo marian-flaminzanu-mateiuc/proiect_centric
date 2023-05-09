@@ -20,7 +20,7 @@ namespace Curs07_CENTRIC.PageObjects
         }
         private IWebElement InitializeButton => driver.FindElement(By.XPath("//button[@value='INIT']"));
 
-        private IWebElement DataAccesModeInput => driver.FindElement(By.XPath("//form[@id='adminForm']/table[@class='form']//input[@id='accessMode3']"));
+        private IList<IWebElement> DataAccesModeOptions => driver.FindElements(By.XPath("//input[@name='accessMode']"));
 
         private IWebElement SOAPEndpointInput => driver.FindElement(By.XPath("//form[@id='adminForm']/table[@class='form2']//input[@id='soapEndpoint']"));
 
@@ -38,17 +38,18 @@ namespace Curs07_CENTRIC.PageObjects
         
         private IWebElement ThresholdInput => driver.FindElement(By.XPath("//table[@class='form2']//input[@id='loanProcessorThreshold']"));
         
-        private SelectElement LoanProviderSelectElement => new SelectElement(LoanProviderSelect);
-        private SelectElement LoanProcessorSelectElement => new SelectElement(LoanProcessorSelect);
-        public void InitializeDatabase( string SOAPEndpoint, string RESTEndpoint,string endpoint, string initialBalance, string minimumBalance,string loanProvider,string loanProcessor, string threshold)
+      
+        public void InitializeDatabase( int dataAccesMode, string SOAPEndpoint, string RESTEndpoint,string endpoint, string initialBalance, string minimumBalance,string loanProvider,string loanProcessor, string threshold)
         {
-            DataAccesModeInput.Click();
+            DataAccesModeOptions.ElementAt(dataAccesMode).Click();
             SOAPEndpointInput.SendKeys(SOAPEndpoint);
             RESTEndpointInput.SendKeys(RESTEndpoint);
             EndpointInput.SendKeys(endpoint);
             InitialBalanceInput.SendKeys(initialBalance);
-            MinimumBalanceInput.SendKeys(minimumBalance);      
+            MinimumBalanceInput.SendKeys(minimumBalance);
+            SelectElement LoanProviderSelectElement= new SelectElement(LoanProviderSelect); 
             LoanProviderSelectElement.SelectByText(loanProvider);
+            SelectElement LoanProcessorSelectElement= new SelectElement(LoanProcessorSelect);
             LoanProcessorSelectElement.SelectByValue(loanProcessor);
             ThresholdInput.SendKeys(threshold);
             InitializeButton.Click();

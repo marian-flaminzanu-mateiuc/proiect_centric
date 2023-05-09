@@ -36,10 +36,10 @@ namespace Curs07_CENTRIC
         {
 
             driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/register.htm");
-            register.RegisterTheApplication("testare1", "testare1", "Address", "Mexico", "Mexico", "13234", "455321112345", "23345567", "testare301", "testare3", "testare3");
+            register.RegisterTheApplication("testare1", "testare1", "Address", "Mexico", "Mexico", "13234", "455321112345", "23345567", "testare305", "testare3", "testare3");
             register.LogOut();
             driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/index.htm");
-            login.SignInTheApplication("testare301", "testare3");
+            login.SignInTheApplication("testare305", "testare3");
             billPayment.menuItemControlBillPayment.NavigateToBillPaymentPage();
 
             billPayment.SendPayment("Mike Anderson", "Avenue 23", "Juneau", "Alaska", "400230", "907-555-1212", "12000", "12000", "750");
