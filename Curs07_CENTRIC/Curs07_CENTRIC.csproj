@@ -62,7 +62,10 @@
     <Compile Include="BillPaymentTest.cs" />
     <Compile Include="OpenNewAccountTest.cs" />
     <Compile Include="PageObjects\NewAccountPage.cs" />
+    <Compile Include="PageObjects\RecoverUserPage.cs" />
+    <Compile Include="RecoverUser.cs" />
     <Compile Include="Shared\MenuItemControlNewAccount.cs" />
+    <Compile Include="Shared\MenuItemRecoverUser.cs" />
     <Compile Include="UpdateInformationTest.cs" />
     <Compile Include="LoginTests.cs" />
     <Compile Include="PageObjects\AdminPage.cs" />
