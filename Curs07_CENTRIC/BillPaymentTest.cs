@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -28,34 +26,26 @@ namespace Curs07_CENTRIC
             register = new RegisterPage(driver);
             //maximize browser window 
             driver.Manage().Window.Maximize();
-            
-            
+
+
         }
         [TestMethod]
         public void Should_SendPaymentAndPayBill_When_UserIsLoggedIn()
         {
             //navigate to the registration page because  the bill payment action requires login
             driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/register.htm");
-<<<<<<< HEAD
             register.RegisterTheApplication("testare1", "testare1", "Address", "Mexico", "Mexico", "13234", "455321112345", "23345567", "testare301", "testare3", "testare3");
-           //after register press log out
-=======
-            register.RegisterTheApplication("testare1", "testare1", "Address", "Mexico", "Mexico", "13234", "455321112345", "23345567", "testare305", "testare3", "testare3");
->>>>>>> 88addb3f1cb9e260e412589839abd692762eb2fc
+            //after register press log out
             register.LogOut();
             //navigate to home page for log in 
             driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/index.htm");
-<<<<<<< HEAD
             //log in with your registration dates
             login.SignInTheApplication("testare301", "testare3");
             //navigate to bill pay page
-=======
-            login.SignInTheApplication("testare305", "testare3");
->>>>>>> 88addb3f1cb9e260e412589839abd692762eb2fc
             billPayment.menuItemControlBillPayment.NavigateToBillPaymentPage();
 
             billPayment.SendPayment("Mike Anderson", "Avenue 23", "Juneau", "Alaska", "400230", "907-555-1212", "12000", "12000", "750");
-            
+
             Thread.Sleep(3000);
 
             //assert
