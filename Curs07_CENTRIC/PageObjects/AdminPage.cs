@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Curs07_CENTRIC.PageObjects
 {
-    public class AdminPage
+    public class AdminPage              //Ioana
     {
         private IWebDriver driver;
         public MenuItemControlAdmin menuItemControlAdmin => new MenuItemControlAdmin(driver);

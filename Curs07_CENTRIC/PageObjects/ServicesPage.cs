@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Curs07_CENTRIC.PageObjects
 {
-   public  class ServicesPage
+   public  class ServicesPage           //Axana-Marinela
     {
         private IWebDriver driver;
         public ServicesPage(IWebDriver browser)

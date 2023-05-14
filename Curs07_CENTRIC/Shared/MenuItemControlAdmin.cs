@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Curs07_CENTRIC.Shared
 {
-    public class MenuItemControlAdmin
+    public class MenuItemControlAdmin           //Ioana
     {
         private IWebDriver driver;
         public MenuItemControlAdmin(IWebDriver browser)

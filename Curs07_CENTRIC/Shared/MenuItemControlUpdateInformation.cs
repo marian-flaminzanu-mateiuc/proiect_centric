@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Curs07_CENTRIC.Shared
 {
-    public class MenuItemControlUpdateInformation
+    public class MenuItemControlUpdateInformation                   //Marian
     {
         private IWebDriver driver;
         public MenuItemControlUpdateInformation(IWebDriver browser)

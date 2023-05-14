@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Curs07_CENTRIC
 {
-    [TestClass]
+    [TestClass]                     //test case Axana-Marinela
     public class ViewServicesTest
     {
         private IWebDriver driver;
@@ -30,7 +30,8 @@ namespace Curs07_CENTRIC
         }
 
         [TestMethod]
-        public void Should_Access_SiteMapPage()   //set de valori pentru testare cu credentiale gresite
+        public void Should_Access_SiteMapPage()   //open Site Map from bottom page and press Services button.
+                                                  //In Services page, the bookstore field has the http link who is not available,it has xml format.
         {
 
             SiteMap.SiteMapRedirect().ServicesRedirect();
@@ -39,8 +40,6 @@ namespace Curs07_CENTRIC
             Thread.Sleep(2000);
 
             //assert
-            //var actualResult = driver.FindElement(By.XPath("//div[@id='bodyPanel']//div[@id='rightPanel']//li[@class='Solutions']"));
-            //var actualResult = driver.FindElement(By.XPath("//div[@id='bodyPanel']//div[@id='rightPanel']//span[@class='heading']"));
             var actualResult = driver.FindElement(By.CssSelector("body div.header > span"));
             Assert.IsNotNull(actualResult);
 

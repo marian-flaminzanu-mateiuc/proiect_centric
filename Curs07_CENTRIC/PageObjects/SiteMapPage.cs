@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Curs07_CENTRIC.PageObjects
 {
-    public class SiteMapPage
+    public class SiteMapPage        //Axana-Marinela
     {
         private IWebDriver driver;
         public MenuItemSiteMap menuItemSiteMap => new MenuItemSiteMap(driver);

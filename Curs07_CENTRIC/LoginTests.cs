@@ -6,8 +6,8 @@ using System.Threading;
 using Curs07_CENTRIC.PageObjects;
 
 namespace Curs07_CENTRIC
-{
-    [TestClass]
+{   
+    [TestClass]                 //test case Axana-Marinela
     public class LoginTests
     {
         private IWebDriver driver;
@@ -23,25 +23,26 @@ namespace Curs07_CENTRIC
            
             //maximize browser window 
             driver.Manage().Window.Maximize();
-            //open the navigatation URL
            
         }
         [TestMethod]
-        public void Should_LoginUser_When_ValidCredentialsAreUsed()//test de verificare logare cu un set de credentiale corecte
+        public void Should_LoginUser_When_ValidCredentialsAreUsed() //test de verificare logare cu un set de credentiale corecte
         {
-
+            //navigate to register Page to create account
             driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/register.htm");
             register.RegisterTheApplication("testare", "testare", "Address", "Mexico", "Mexico", "13234", "455321112345", "2334556", "testare19", "test", "test");
+            //press log out button to verify log in action
             register.LogOut();
+            //navigate to home page
             driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/index.htm");
-            login.menuItemControlLoggedOut.NavigateToLoginPage();
+            login.menuItemControlLogIn.NavigateToLoginPage();
+            //log in with your registration dates
             login.SignInTheApplication("testare19", "test");
 
             // sleep
             Thread.Sleep(2000);
 
             //assert
-            //var expectedResult = "Welcome Test Customer FirstName Test Customer LastName";
             var actualResult = driver.FindElement(By.ClassName("smallText"));
 
             Assert.IsNotNull(actualResult);
@@ -52,7 +53,7 @@ namespace Curs07_CENTRIC
         {
            
             driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/index.htm");
-            login.menuItemControlLoggedOut.NavigateToLoginPage();
+            login.menuItemControlLogIn.NavigateToLoginPage();
             login.SignInTheApplication("hasjj@outlook.ro", "Test!123");
 
             // sleep

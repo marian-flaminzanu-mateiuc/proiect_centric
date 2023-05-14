@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Curs07_CENTRIC.Shared
 {
-   public class MenuItemSiteMap
+   public class MenuItemSiteMap                     //Axana-Marinela
     {
         private IWebDriver driver;
         public MenuItemSiteMap(IWebDriver browser)

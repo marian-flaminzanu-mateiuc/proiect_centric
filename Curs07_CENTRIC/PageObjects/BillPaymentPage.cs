@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Curs07_CENTRIC.PageObjects
 {
-    public class BillPaymentPage
+    public class BillPaymentPage            //Ioana
     {
         private IWebDriver driver;
         public MenuItemControlBillPayment menuItemControlBillPayment => new MenuItemControlBillPayment(driver);

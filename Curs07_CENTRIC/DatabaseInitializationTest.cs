@@ -11,7 +11,7 @@ using System.Threading;
 
 namespace Curs07_CENTRIC
 {
-    [TestClass]
+    [TestClass]                             //test case Ioana
     public class DatabaseInitializationTest
     {
         private IWebDriver driver;

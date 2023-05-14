@@ -3,7 +3,7 @@ using OpenQA.Selenium;
 
 namespace Curs07_CENTRIC.PageObjects
 {
-    public class RegisterPage
+    public class RegisterPage           //Axana-Marinela
     {
         private IWebDriver driver;
         public MenuItemControlRegister menuItemControlRegister => new MenuItemControlRegister(driver);

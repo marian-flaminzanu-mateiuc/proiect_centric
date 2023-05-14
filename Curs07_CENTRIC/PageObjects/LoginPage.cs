@@ -3,10 +3,10 @@ using OpenQA.Selenium;
 
 namespace Curs07_CENTRIC.PageObjects
 {
-    public class LoginPage
+    public class LoginPage          //Axana-Marinela
     {
         private IWebDriver driver;
-        public MenuItemControlLoggedOut menuItemControlLoggedOut => new MenuItemControlLoggedOut(driver);
+        public MenuItemControlLogIn menuItemControlLogIn => new MenuItemControlLogIn(driver);
         public LoginPage(IWebDriver browser)
         {
             driver = browser;

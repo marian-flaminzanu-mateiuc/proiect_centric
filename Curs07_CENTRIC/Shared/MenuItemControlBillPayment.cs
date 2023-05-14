@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Curs07_CENTRIC.Shared
 {
-    public class MenuItemControlBillPayment
+    public class MenuItemControlBillPayment                 //Ioana
     {
             private IWebDriver driver;
             public MenuItemControlBillPayment(IWebDriver browser)

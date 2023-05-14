@@ -7,7 +7,7 @@ using Curs07_CENTRIC.PageObjects;
 
 namespace Curs07_CENTRIC
 {
-    [TestClass]
+    [TestClass]                     //test case Axana-Marinela
     public class RegisterTests
     {
         private IWebDriver driver;
@@ -23,7 +23,7 @@ namespace Curs07_CENTRIC
         }
 
         [TestMethod]
-        public void Should_RegisterUser()//test de verificare logare cu un set de credentiale corecte
+        public void Should_RegisterUser()//test de verificare inregistrare cu un set de credentiale noi
         {
 
             register.RegisterTheApplication("testare", "testare", "Address", "Mexico", "Mexico", "13234", "455321112345", "2334556", "testare16", "testare2", "testare2");
@@ -32,7 +32,6 @@ namespace Curs07_CENTRIC
             Thread.Sleep(3000);
 
             //assert
-            //var expectedResult = "Welcome Test Customer FirstName Test Customer LastName";
             var actualResult = driver.FindElement(By.XPath("//p[contains(text(), 'Your account was created successfully. You are now logged in.')]"));
 
             Assert.IsNotNull(actualResult);

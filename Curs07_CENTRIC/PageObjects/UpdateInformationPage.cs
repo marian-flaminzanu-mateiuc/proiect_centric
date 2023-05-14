@@ -9,7 +9,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace Curs07_CENTRIC.PageObjects
 {
-    public class UpdateInformationPage
+    public class UpdateInformationPage      //Marian
     {
         private IWebDriver driver;
         public MenuItemControlUpdateInformation menuItemControlUpdateInformation => new MenuItemControlUpdateInformation(driver);
