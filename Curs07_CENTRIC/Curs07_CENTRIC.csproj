@@ -60,10 +60,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BillPaymentTest.cs" />
+    <Compile Include="GetLoanTest.cs" />
     <Compile Include="OpenNewAccountTest.cs" />
+    <Compile Include="PageObjects\LoanPage.cs" />
     <Compile Include="PageObjects\NewAccountPage.cs" />
     <Compile Include="PageObjects\RecoverUserPage.cs" />
     <Compile Include="RecoverUser.cs" />
+    <Compile Include="Shared\MenuItemControlLoan.cs" />
     <Compile Include="Shared\MenuItemControlNewAccount.cs" />
     <Compile Include="Shared\MenuItemRecoverUser.cs" />
     <Compile Include="UpdateInformationTest.cs" />

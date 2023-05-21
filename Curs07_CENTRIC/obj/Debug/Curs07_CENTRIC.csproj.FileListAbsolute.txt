@@ -349,3 +349,35 @@ C:\Users\Mari\Documents\AN3\proiect_centric\Curs07_CENTRIC\obj\Debug\Curs07_CENT
 C:\Users\Mari\Documents\AN3\proiect_centric\Curs07_CENTRIC\obj\Debug\Curs07_CENTRIC.csproj.CopyComplete
 C:\Users\Mari\Documents\AN3\proiect_centric\Curs07_CENTRIC\obj\Debug\Curs07_CENTRIC.dll
 C:\Users\Mari\Documents\AN3\proiect_centric\Curs07_CENTRIC\obj\Debug\Curs07_CENTRIC.pdb
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\selenium-manager\linux\selenium-manager
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\selenium-manager\macos\selenium-manager
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\selenium-manager\windows\selenium-manager.exe
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\Curs07_CENTRIC.dll
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\Curs07_CENTRIC.pdb
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\WebDriver.dll
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\WebDriver.Support.dll
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\cs\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\de\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\fr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\it\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\ja\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\ko\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\pl\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\pt-BR\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\tr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\git repositories\proiect_centric\Curs07_CENTRIC\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\git repositories\proiect_centric\Curs07_CENTRIC\obj\Debug\Curs07_CENTRIC.csproj.AssemblyReference.cache
+D:\git repositories\proiect_centric\Curs07_CENTRIC\obj\Debug\Curs07_CENTRIC.csproj.CoreCompileInputs.cache
+D:\git repositories\proiect_centric\Curs07_CENTRIC\obj\Debug\Curs07_CENTRIC.csproj.CopyComplete
+D:\git repositories\proiect_centric\Curs07_CENTRIC\obj\Debug\Curs07_CENTRIC.dll
+D:\git repositories\proiect_centric\Curs07_CENTRIC\obj\Debug\Curs07_CENTRIC.pdb
