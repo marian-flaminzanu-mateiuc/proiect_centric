@@ -381,3 +381,4 @@ D:\git repositories\proiect_centric\Curs07_CENTRIC\obj\Debug\Curs07_CENTRIC.cspr
 D:\git repositories\proiect_centric\Curs07_CENTRIC\obj\Debug\Curs07_CENTRIC.csproj.CopyComplete
 D:\git repositories\proiect_centric\Curs07_CENTRIC\obj\Debug\Curs07_CENTRIC.dll
 D:\git repositories\proiect_centric\Curs07_CENTRIC\obj\Debug\Curs07_CENTRIC.pdb
+C:\Users\Mari\Documents\AN3\proiect_centric\Curs07_CENTRIC\obj\Debug\Curs07_CENTRIC.csproj.AssemblyReference.cache

@@ -6,24 +6,24 @@ using System.Threading;
 using Curs07_CENTRIC.PageObjects;
 
 namespace Curs07_CENTRIC
-{   
+{
     [TestClass]                 //test case Axana-Marinela
     public class LoginTests
     {
         private IWebDriver driver;
         private LoginPage login;
         private RegisterPage register;
-       
+
         [TestInitialize]
         public void TestInitialize()
         {
             driver = new ChromeDriver();
             login = new LoginPage(driver);
             register = new RegisterPage(driver);
-           
+
             //maximize browser window 
             driver.Manage().Window.Maximize();
-           
+
         }
         [TestMethod]
         public void Should_LoginUser_When_ValidCredentialsAreUsed() //test de verificare logare cu un set de credentiale corecte
@@ -51,10 +51,10 @@ namespace Curs07_CENTRIC
         [TestMethod]
         public void Should_NotLoginUser_When_WrongEmailUsed()   //set de valori pentru testare cu credentiale gresite
         {
-           
+
             driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/index.htm");
             login.menuItemControlLogIn.NavigateToLoginPage();
-            login.SignInTheApplication("hasjj@outlook.ro", "Test!123");
+            login.SignInTheApplication("email@out.com", "Test!123");
 
             // sleep
             Thread.Sleep(2000);
