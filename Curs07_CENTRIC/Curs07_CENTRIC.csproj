@@ -65,10 +65,13 @@
     <Compile Include="PageObjects\LoanPage.cs" />
     <Compile Include="PageObjects\NewAccountPage.cs" />
     <Compile Include="PageObjects\RecoverUserPage.cs" />
+    <Compile Include="PageObjects\TransferFundsPage.cs" />
     <Compile Include="RecoverUser.cs" />
     <Compile Include="Shared\MenuItemControlLoan.cs" />
     <Compile Include="Shared\MenuItemControlNewAccount.cs" />
+    <Compile Include="Shared\MenuItemControlTransferFunds.cs" />
     <Compile Include="Shared\MenuItemRecoverUser.cs" />
+    <Compile Include="TransferFundsTest.cs" />
     <Compile Include="UpdateInformationTest.cs" />
     <Compile Include="LoginTests.cs" />
     <Compile Include="PageObjects\AdminPage.cs" />
